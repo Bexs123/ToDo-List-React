@@ -1,0 +1,15 @@
+.checked {
+    text-decoration: line-through;
+  }
+  
+  .itemContainer {
+    display: flex;
+    align-items: center;
+    width: 250px;
+    justify-content: space-between;
+  }
+  
+  .date {
+    margin: 0;
+    font-size: 0.8em;
+  }
