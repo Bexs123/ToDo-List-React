@@ -1,15 +1,48 @@
+.itemWrapper {
+  background-color: lightblue;
+  list-style: none;
+  padding: 10px;
+  width: 250px;
+  margin: 5px 0;
+}
+
+.itemContainer p {
+  margin: 0;
+  text-align: center;
+}
+
+.itemContainer {
+  display: flex;
+  align-items: center;
+  width: auto;
+  justify-content: space-between;
+}
+
 .checked {
-    text-decoration: line-through;
-  }
-  
-  .itemContainer {
-    display: flex;
-    align-items: center;
-    width: 250px;
-    justify-content: space-between;
-  }
-  
-  .date {
-    margin: 0;
-    font-size: 0.8em;
-  }
+  opacity: 0.3;
+  background-color: lightgrey;
+}
+
+.date {
+  margin: 0;
+  margin-top: 5px;
+  font-size: 0.5em;
+}
+
+.actionWrapper {
+  display: flex;
+  align-items: baseline;
+}
+
+.actionButton {
+  cursor: pointer;
+  margin: 5px;
+}
+
+.actionButton:hover {
+  transform: scale(1.1);
+}
+
+.bin {
+  margin: 0;
+}

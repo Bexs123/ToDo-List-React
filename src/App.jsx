@@ -30,7 +30,7 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div className="app-wrapper">
       <h1>Todo List</h1>
       <Form handleForm={handleForm} />
       <List

@@ -1,22 +1,24 @@
 import "./Item.css";
+import Date from "./Date"
 
 const Item = ({ value, checked, handleChecked, handleDelete, date }) => {
   return (
-    <li className={`${checked ? "checked" : undefined}`}>
+    <li className={`itemWrapper ${checked ? "checked" : undefined}`}>
       <div className="itemContainer">
         <p>{value}</p>
-        <div>
+        <div className="actionWrapper">
           <input
             type="checkbox"
+            className="actionButton"
             name=""
             id=""
             checked={checked}
             onChange={handleChecked}
           />
-          <button onClick={handleDelete}>🗑</button>
+          <p className="actionButton bin" onClick={handleDelete}>☠️</p>
         </div>
       </div>
-      <p className="date">{date.getDate()}/{date.getMonth()}: {date.getHours()}</p>
+      <Date todoDate={date} />
     </li>
   );
 };
